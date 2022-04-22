@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Users = () => {
     return (
@@ -8,4 +7,4 @@ const Users = () => {
     );
 };
 
-export {Users};
+export default Users;

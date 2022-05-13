@@ -1,4 +1,4 @@
-const baseURL = process.env.REACT_APP_API;yy
+const baseURL = process.env.REACT_APP_API;
 
 const urls = {
     users :'/users',

@@ -1,6 +1,6 @@
 import {Routes, Route, Navigate} from "react-router-dom";
 import {MainLayout} from "./layout";
-import {AboutPage, HomePage, NotFoundPage, PostPage, UsersPage} from "./pages";
+import {AboutPage, HomePage, NotFoundPage, PostsPage, SinglePostPage, UsersPage} from "./pages";
 
 
 const App = () => {
@@ -10,7 +10,9 @@ const App = () => {
                 <Route index element={<Navigate to={'home'}/>}/>
                 <Route path={'home'} element={<HomePage/>}/>
                 <Route path={'users'} element={<UsersPage/>}/>
-                <Route path={'posts'} element={<PostPage/>}/>
+                <Route path={'posts'} element={<PostsPage/>}>
+                    <Route path={':id'} element={<SinglePostPage/>}/>
+                </Route>
                 <Route path={'about'} element={<AboutPage/>}/>
                 <Route path={'*'} element={<NotFoundPage/>}/>
                 </Route>

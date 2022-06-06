@@ -14,7 +14,7 @@ const UsersPage = () => {
         <div>
             {
                 users
-                    ? users.map((user) => <User key={user.id} user={user}/>)
+                    ? users.map(user => <User key={user.id} user={user}/>)
                     :'Loading..'
             }
         </div>

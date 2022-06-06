@@ -1,7 +1,7 @@
 import {Button} from "../Button/Button";
 
 const User = ({user}) => {
-    const {id, user} = user;
+    const {id, name} = user;
     return (
         <div>
             {id}, {name} <Button state={user} to={id.toString()}>show inform</Button>
@@ -9,4 +9,17 @@ const User = ({user}) => {
     );
 };
 
-export {User};
+export {
+    User
+}
+
+// import { Button } from '../Button/Button';
+//
+// export const User = ({user}) => {
+//     const {id, name} = user;
+//     return (
+//         <div>
+//             {id}, {name} <Button state={user} to={id.toString()}>show info</Button>
+//         </div>
+//     );
+// }
